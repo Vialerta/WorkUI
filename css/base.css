@@ -6349,7 +6349,7 @@ a.thumbnail:focus, a.thumbnail:hover {
     color: #2d7091!important
 }
 
-/*---------- Print View --------------*/
+/*---------- Print View --------------*/ 
 
 @media print {
     *, :after, :before {
