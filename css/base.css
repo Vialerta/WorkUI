@@ -1,5 +1,28 @@
-/*Add Roboto Webfont as Default*/
+/*
+
+_/\\\______________/\\\_______________________________________________________/\\\________/\\\__/\\\\\\\\\\\_
+ _\/\\\_____________\/\\\______________________________/\\\___________________\/\\\_______\/\\\_\/////\\\///__
+  _\/\\\_____________\/\\\_____________________________\/\\\___________________\/\\\_______\/\\\_____\/\\\_____
+   _\//\\\____/\\\____/\\\______/\\\\\_____/\\/\\\\\\\__\/\\\\\\\\______________\/\\\_______\/\\\_____\/\\\_____
+    __\//\\\__/\\\\\__/\\\_____/\\\///\\\__\/\\\/////\\\_\/\\\////\\\____________\/\\\_______\/\\\_____\/\\\_____
+     ___\//\\\/\\\/\\\/\\\_____/\\\__\//\\\_\/\\\___\///__\/\\\\\\\\/_____________\/\\\_______\/\\\_____\/\\\_____
+      ____\//\\\\\\//\\\\\_____\//\\\__/\\\__\/\\\_________\/\\\///\\\_____________\//\\\______/\\\______\/\\\_____
+       _____\//\\\__\//\\\_______\///\\\\\/___\/\\\_________\/\\\_\///\\\____________\///\\\\\\\\\/____/\\\\\\\\\\\_
+        ______\///____\///__________\/////_____\///__________\///____\///_______________\/////////_____\///////////__
+
+
+                                                 ---- Work UI Framework ----
+                                                 |          v0.5           |
+                                                 ---------------------------
+                                                 |      GPLv3 License      |
+                                                 ---------------------------
+
+*/
+
+/*---------- Add Roboto Webfont as Default --------------*/
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+
+/*----------Base visual of page --------------*/
 html {
     font: 400 14px/20px "Roboto", Helvetica, Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -7,16 +30,18 @@ html {
     background: #fff;
     color: #444
 }
-
 body {
     margin: 0
 }
 a {
-    background: 0 0
+    background: 0 0;
 }
 a:active, a:hover {
-    outline: 0
+    outline: 0;
 }
+
+/* Set default tags visual */
+
 .link, a {
     color: #07D;
     text-decoration: none;
@@ -39,7 +64,7 @@ b, strong {
     white-space: nowrap
 }
 em {
-    color: #D05
+    color: #D05;
 }
 ins {
     background: #ffa;
@@ -80,13 +105,13 @@ audio, canvas, img, svg, video {
     max-width: none
 }
 img {
-    border: 0
+    border: 0;
 }
 svg:not(:root) {
     overflow: hidden
 }
 blockquote, figure {
-    margin: 0
+    margin: 0;
 }
 address, blockquote, dl, fieldset, figure, ol, p, pre, ul {
     margin: 0 0 15px 0
@@ -94,6 +119,9 @@ address, blockquote, dl, fieldset, figure, ol, p, pre, ul {
 *+address, *+blockquote, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
     margin-top: 15px
 }
+
+/*---------- Typography --------------*/
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -132,13 +160,13 @@ ol, ul {
     padding-left: 30px
 }
 ol>li>ol, ol>li>ul, ul>li>ol, ul>li>ul {
-    margin: 0
+    margin: 0;
 }
 dt {
     font-weight: 700
 }
 dd {
-    margin-left: 0
+    margin-left: 0;
 }
 hr {
     box-sizing: content-box;
@@ -196,6 +224,9 @@ iframe {
         width: device-width
     }
 }
+
+/*---------- Grid --------------*/
+
 .grid {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -813,6 +844,8 @@ iframe {
         left: -90%
     }
 }
+
+/*---------- Containers --------------*/
 .panel {
     display: block;
     position: relative
@@ -1081,6 +1114,9 @@ iframe {
         padding-left: 100px
     }
 }
+
+/*---------- Cover settings --------------*/
+
 .cover-background {
     background-position: 50% 50%;
     background-size: cover;
@@ -1108,6 +1144,11 @@ iframe {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%)
 }
+
+
+
+/*---------- Navigation --------------*/
+
 .nav, .nav ul {
     margin: 0;
     padding: 0;
@@ -1117,7 +1158,7 @@ iframe {
     display: block;
     text-decoration: none
 }
-.nav>li>a {
+.nav>li>a {Typography
     padding: 5px 15px
 }
 .nav ul {
@@ -1433,6 +1474,9 @@ html:not(.touch) .nav-offcanvas ul a:hover {
     text-decoration: none;
     cursor: text
 }
+
+/*---------- Breadcrumbs --------------*/
+
 .breadcrumb {
     padding: 0;
     list-style: none;
@@ -1453,6 +1497,8 @@ html:not(.touch) .nav-offcanvas ul a:hover {
 .breadcrumb>li:not(.active)>span {
     color: #999
 }
+
+/*---------- Pagination --------------*/
 .pagination {
     padding: 0;
     list-style: none;
@@ -1516,6 +1562,8 @@ html:not(.touch) .nav-offcanvas ul a:hover {
 .pagination-right {
     text-align: right
 }
+
+/*---------- Tabs --------------*/
 .tab {
     margin: 0;
     padding: 0;
@@ -1721,6 +1769,8 @@ html:not(.touch) .nav-offcanvas ul a:hover {
         border-left-color: transparent
     }
 }
+
+/*---------- Navigation with Thubms --------------*/
 .thumbnav {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1766,6 +1816,9 @@ html:not(.touch) .nav-offcanvas ul a:hover {
 .thumbnav>.active>*>img {
     opacity: 1
 }
+
+/*---------- Lists --------------*/
+
 .list {
     padding: 0;
     list-style: none
@@ -1826,6 +1879,9 @@ html:not(.touch) .nav-offcanvas ul a:hover {
 .description-list-line>dd {
     color: #999
 }
+
+/*---------- Tables --------------*/
+
 .table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -1870,6 +1926,8 @@ html:not(.touch) .nav-offcanvas ul a:hover {
 .table-hover tbody tr:hover {
     background: #EEE
 }
+
+/*---------- Forms and Inputs --------------*/
 .form input, .form select, .form textarea {
     box-sizing: border-box;
     margin: 0;
@@ -2100,6 +2158,9 @@ select.form-width-mini {
 .form-icon-flip>input {
     padding-right: 30px!important
 }
+
+/*---------- Buttons --------------*/
+
 .button::-moz-focus-inner {
     border: 0;
     padding: 0
@@ -2229,6 +2290,9 @@ select.form-width-mini {
     vertical-align: middle;
     position: relative
 }
+
+/*---------- Icons --------------*/
+
 @font-face {
     font-family: FontAwesome;
     src: url(../fonts/fontawesome-webfont.woff2) format('woff2'), url(../fonts/fontawesome-webfont.woff) format("woff"), url(../fonts/fontawesome-webfont.ttf) format("truetype");
@@ -4189,6 +4253,9 @@ select.form-width-mini {
     border: 0;
     padding: 0
 }
+
+/*---------- Close Things --------------*/
+
 .close {
     -webkit-appearance: none;
     margin: 0;
@@ -4234,6 +4301,9 @@ select.form-width-mini {
 .close-alt:focus:after, .close-alt:hover:after {
     opacity: .8
 }
+
+/*---------- Badges --------------*/
+
 .badge {
     display: inline-block;
     padding: 0 5px;
@@ -4265,6 +4335,9 @@ a.badge:hover {
 .badge-danger {
     background-color: #da314b
 }
+
+/*---------- Alerts --------------*/
+
 .alert {
     margin-bottom: 15px;
     padding: 10px;
@@ -4304,6 +4377,9 @@ a.badge:hover {
 .alert-large>.close:first-child {
     margin: -10px -10px 0 0
 }
+
+/*---------- Thumbnails --------------*/
+
 .thumbnail {
     display: inline-block;
     max-width: 100%;
@@ -4339,6 +4415,9 @@ a.thumbnail:focus, a.thumbnail:hover {
 .thumbnail-expand, .thumbnail-expand>img {
     width: 100%
 }
+
+/*---------- Overlays --------------*/
+
 .overlay {
     display: inline-block;
     position: relative;
@@ -4548,6 +4627,10 @@ a.thumbnail:focus, a.thumbnail:hover {
 .overlay-toggle.hover .overlay-caption, .overlay-toggle:hover .overlay-caption, .overlay.hover .overlay-caption, .overlay:hover .overlay-caption {
     opacity: 1
 }
+
+
+/*---------- Columns --------------*/
+
 [class*=column-] {
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
@@ -4686,6 +4769,9 @@ a.thumbnail:focus, a.thumbnail:hover {
         column-count: 6
     }
 }
+/*---------- Animations --------------*/
+
+
 [class*=animation-] {
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
@@ -5141,6 +5227,9 @@ a.thumbnail:focus, a.thumbnail:hover {
         transform: translateY(0)
     }
 }
+
+/*---------- Dropdown --------------*/
+
 .dropdown, .dropdown-blank {
     display: none;
     position: absolute;
@@ -5244,6 +5333,9 @@ a.thumbnail:focus, a.thumbnail:hover {
     overflow-y: auto;
     max-height: 200px
 }
+
+/*---------- Modals --------------*/
+
 .modal {
     display: none;
     position: fixed;
@@ -5387,6 +5479,9 @@ a.thumbnail:focus, a.thumbnail:hover {
     -webkit-animation: rotate 2s infinite linear;
     animation: rotate 2s infinite linear
 }
+
+/*---------- Offcanvas --------------*/
+
 .offcanvas {
     display: none;
     position: fixed;
@@ -5446,6 +5541,7 @@ a.thumbnail:focus, a.thumbnail:hover {
 .offcanvas .panel a:not([class]):hover {
     color: #fff
 }
+/*---------- Switcher --------------*/
 .switcher {
     margin: 0;
     padding: 0;
@@ -5455,6 +5551,9 @@ a.thumbnail:focus, a.thumbnail:hover {
 .switcher>:not(.active) {
     display: none
 }
+
+/*---------- Texts --------------*/
+
 .text-small {
     font-size: 11px;
     line-height: 16px
@@ -5537,6 +5636,9 @@ a.thumbnail:focus, a.thumbnail:hover {
     -moz-hyphens: auto;
     hyphens: auto
 }
+
+/*---------- Container --------------*/
+
 .container {
     box-sizing: border-box;
     max-width: 980px;
@@ -5575,6 +5677,9 @@ a.thumbnail:focus, a.thumbnail:hover {
     display: table-cell;
     width: 10000px
 }
+
+/*---------- Aligns e Floats --------------*/
+
 .float-left {
     float: left
 }
@@ -5781,6 +5886,10 @@ a.thumbnail:focus, a.thumbnail:hover {
 .overflow-container>:last-child {
     margin-bottom: 0
 }
+
+
+/*---------- Positions --------------*/
+
 .position-absolute, [class*=position-top], [class*=position-bottom] {
     position: absolute!important
 }
@@ -5823,6 +5932,9 @@ a.thumbnail:focus, a.thumbnail:hover {
 .position-z-index {
     z-index: 1
 }
+
+/*---------- Visibility --------------*/
+
 .display-block {
     display: block!important
 }
@@ -5884,6 +5996,9 @@ a.thumbnail:focus, a.thumbnail:hover {
 .notouch .hidden-notouch, .touch .hidden-touch {
     display: none!important
 }
+
+/*---------- Flex --------------*/
+
 .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -6061,6 +6176,10 @@ a.thumbnail:focus, a.thumbnail:hover {
     -webkit-flex: 1;
     flex: 1
 }
+
+
+/*---------- Contrast --------------*/
+
 .contrast {
     color: #fff
 }
@@ -6229,6 +6348,9 @@ a.thumbnail:focus, a.thumbnail:hover {
 .contrast .text-primary {
     color: #2d7091!important
 }
+
+/*---------- Print View --------------*/
+
 @media print {
     *, :after, :before {
         background: 0 0!important;
